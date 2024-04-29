@@ -45,7 +45,9 @@ For any inquiries or assistance during your stay, please feel free to reach out 
             <Image Source="frontdesk.jpg"
                    WidthRequest="170"
                    HorizontalOptions="Start"/>
-            <Label Text="Front Desk: Phone: (555) 123-4566 Email:                                
+            <Label Text="Front Desk:
+Phone: (555) 123-4566
+Email:                                
 whisperingpines@gmail.com"
                TextColor="Black"
                Padding="20,0,0,15"
@@ -59,7 +61,8 @@ whisperingpines@gmail.com"
             <Image Source="housekeeping.jpg"
                    WidthRequest="170"
                    HorizontalOptions="Start"/>
-            <Label Text="Housekeeping: *Call Front Desk or Press pound to be directed to housekeeping"
+            <Label Text="Housekeeping:
+*Call Front Desk or Press pound to be directed to housekeeping"
                TextColor="Black"
                Padding="20,0,0,15"
                FontFamily="Consolas"
