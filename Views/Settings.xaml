@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wp.Views.Settings"
+             Title="Settings">
+    <VerticalStackLayout WidthRequest="500"
+                         HeightRequest="600" 
+                         BackgroundColor="GhostWhite"
+                         Margin="50"
+                         >
+        <Border Stroke="Black"
+                StrokeThickness="3"
+                BackgroundColor="Black"
+                >
+            <Image  Source="trees.jpg"           
+                    Aspect="AspectFill"
+                    x:Name="trees"
+                    MaximumHeightRequest="150"
+                    MaximumWidthRequest="500"
+                    SemanticProperties.Description="Pine Tree Background"
+            />
+        </Border>
+        <Label Text="WP"
+                TextColor="White"
+                Margin="0, -90, 0, 60"
+                FontSize="32"
+                FontAttributes="Bold,Italic"
+                FontFamily="Consolas"    
+                HorizontalOptions="Center"              
+        />
+
+
+        <Grid Margin="0,40,0,0"
+              >
+            <Image Source="pinetree.png"
+               HeightRequest="70"
+               HorizontalOptions="Start"
+               VerticalOptions="End"
+               TranslationX="15"/>
+            <Label Text="Settings"
+                FontFamily="Consolas"
+                FontSize="35"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Start"
+                TranslationY="-30"
+                />
+            <Image Source="pinetree.png"
+               HeightRequest="70"
+               HorizontalOptions="End"
+               VerticalOptions="End"
+               TranslationX="-15"
+                />
+
+        </Grid>
+        <Border Stroke="Black"
+                StrokeThickness="3">
+            <StackLayout>
+                <Grid HeightRequest="320"
+                      >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="80"/>
+                    </Grid.RowDefinitions>
+
+
+                    <Label Grid.Row="0"
+                           Text="Account Settings"
+                           TextColor="Black"
+                           Margin="20, 27, 0, 0"
+                           FontAttributes="Bold"
+                           FontSize="20"/>
+                    <Label Grid.Row="0"
+                            Text="\"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            FontSize="30"
+                            HorizontalTextAlignment="End"
+                            VerticalTextAlignment="Start"
+                            TranslationY="8"
+                            TranslationX="-25"/>
+                    <Label Grid.Row="0"
+                            Text="/"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            FontSize="30"
+                            HorizontalTextAlignment="End"
+                            TranslationY="-10"
+                            VerticalTextAlignment="End"
+                            TranslationX="-25"/>
+
+
+                    <Line Stroke="Black" StrokeThickness="2" Grid.Row="1" X1="-1" X2="501" />
+                    <Button BackgroundColor="Transparent"
+                            Clicked="AccountSettings"
+                            Grid.Row="0"
+                        />
+                    <Label Grid.Row="1"
+                            Text="Contact Us"
+                            TextColor="Black"
+                            Margin="20, 27, 0, 0"
+                            FontAttributes="Bold"
+                            FontSize="20"/>
+                    <Label Grid.Row="1"
+                            Text="\"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            FontSize="30"
+                            HorizontalTextAlignment="End"
+                            VerticalTextAlignment="Start"
+                            TranslationY="8"
+                            TranslationX="-25"/>
+                    <Label Grid.Row="1"
+                            Text="/"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            FontSize="30"
+                            HorizontalTextAlignment="End"
+                            TranslationY="-10"
+                            VerticalTextAlignment="End"
+                            TranslationX="-25"/>
+
+                    <Line Stroke="Black" StrokeThickness="2" Grid.Row="2" X1="-1" X2="501" />
+                    <Button BackgroundColor="Transparent"
+                            Clicked="ContactUs"
+                            Grid.Row="1"
+                            />
+                    
+                    
+                    <Label Grid.Row="2"
+                            Text="About Us"
+                            TextColor="Black"
+                            Margin="20, 27, 0, 0"
+                            FontAttributes="Bold"
+                            FontSize="20"/>
+                    <Label Grid.Row="2"
+                            Text="\"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            FontSize="30"
+                            HorizontalTextAlignment="End"
+                            VerticalTextAlignment="Start"
+                            TranslationY="8"
+                            TranslationX="-25"/>
+                    <Label Grid.Row="2"
+                            Text="/"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            FontSize="30"
+                            HorizontalTextAlignment="End"
+                            TranslationY="-10"
+                            VerticalTextAlignment="End"
+                            TranslationX="-25"/>
+
+                    <Line Stroke="Black" StrokeThickness="2" Grid.Row="3" X1="-1" X2="501" />
+                    <Button BackgroundColor="Transparent"
+                            Clicked="AboutUs"
+                            Grid.Row="2"/>
+                    <ImageButton Source="help.png"
+                                 WidthRequest="60"
+                                 Clicked="HelpButton"
+                                 Grid.Row="3"
+                                 HorizontalOptions="Start"
+                                 Margin="20,10,0,0"/>
+                    <Button Grid.Row="3"
+                            Text="Sign Out"
+                            TextColor="Black"
+                            Margin="80, 0, 0, 0"
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            HorizontalOptions="Center"
+                            Clicked="SignOut"
+                            BackgroundColor="Transparent"/>
+                    <ImageButton Source="signout.png"
+                                 Grid.Row="3"
+                                 WidthRequest="55"
+                                 TranslationX="-40"
+                                 Clicked="SignOut"
+                        />
+
+                    <ImageButton Source="door.png"
+                                 Grid.Row="3"
+                                 WidthRequest="40"
+                                 HorizontalOptions="End"
+                                 Margin="0,0,20,0"
+                                 Clicked="BackButton"
+                                 />
+                </Grid>
+            </StackLayout>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wp.Views.AboutUs"
+             Title="AboutUs">
+    <VerticalStackLayout WidthRequest="500"
+                         HeightRequest="600" 
+                         BackgroundColor="GhostWhite"
+                         Margin="50"
+                         >
+        <Border Stroke="Black"
+                StrokeThickness="3"
+                BackgroundColor="Black"
+                >
+            <Image  Source="trees.jpg"           
+                    Aspect="AspectFill"
+                    x:Name="trees"
+                    MaximumHeightRequest="150"
+                    MaximumWidthRequest="500"
+                    SemanticProperties.Description="Pine Tree Background"
+            />
+        </Border>
+        <Label Text="WP"
+                TextColor="White"
+                Margin="0, -90, 0, 90"
+                FontSize="32"
+                FontAttributes="Bold,Italic"
+                FontFamily="Consolas"    
+                HorizontalOptions="Center"              
+        />
+        <Label Text="About Us"
+               FontSize="35"
+               FontFamily="Consolas"
+               FontAttributes="Bold"
+               TextColor="Black"
+               HorizontalOptions="Center"
+               TranslationY="-30"/>
+        <Label Text="Welcome to Whispering Pines Inn, your tranquil haven nestled in nature's embrace. 
+                "
+               TextColor="Black"
+               Padding="20"
+               FontFamily="Consolas"
+               CharacterSpacing="1"
+               FontSize="17"
+               />
+        <Label Text="Surrounded by the serene landscapes of Whispering Pines forest, our elegant retreat offers a perfect blend of comfort and tranquility. Indulge in our cozy accommodations, rejuvenating spa, and guided nature walks. Experience the magic of simplicity at Whispering Pines Inn – your sanctuary in the woods.
+                "
+               TextColor="Black"
+               Padding="20"
+               FontFamily="Consolas"
+               CharacterSpacing="1"
+               FontSize="17"
+               />
+
+        <ImageButton Source="door.png"
+                     WidthRequest="40"
+                     HorizontalOptions="End"
+                     Margin="0,20,5,0"
+                     Clicked="BackButton"
+                     VerticalOptions="End"/>
+    </VerticalStackLayout>
+</ContentPage>

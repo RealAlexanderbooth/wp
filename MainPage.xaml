@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wp.MainPage">
+
+    <ScrollView 
+                WidthRequest="500"
+                HeightRequest="600" 
+                BackgroundColor="GhostWhite"
+                Margin="50">
+
+        <VerticalStackLayout Padding="0"
+                             >
+            <Border
+                Margin="8,8,0,30"
+                WidthRequest="60"
+                HeightRequest="60"
+                HorizontalOptions="Start"
+                Stroke="Black"
+                BackgroundColor="SandyBrown"
+                StrokeThickness="2"             
+                >
+                <Label Text="WP"
+                       TextColor="black"
+                       Margin="10, 10"
+                       FontSize="30"
+                       FontAttributes="Bold,Italic"
+                       FontFamily="Consolas"    
+                       HorizontalOptions="Center"
+                />
+            </Border>
+            <Border WidthRequest="160"
+                    HeightRequest="160"
+                    StrokeThickness="5"                
+                    x:Name="myBorder"
+                    Stroke="Black"
+                    Margin="0,0,0,30"             
+
+                    >
+                <Image Source="logo.jpg"           
+                       Aspect="AspectFill"
+                       x:Name="logo"
+                       MaximumHeightRequest="150"
+                       MaximumWidthRequest="150"
+                       SemanticProperties.Description="Whispering Pines Logo"    
+                       
+                    />
+
+
+            </Border>
+            <Label Text="Unwind, Simplify, and Indulge - 
+                   Your Perfect Retreat Awaits!"
+                   FontFamily="Consolas"
+                   FontSize="Title"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,0,0,30"
+            />
+          
+            <Label Text="Your relaxation starts now"
+                   FontFamily="Consolas"
+                   FontSize="Title"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   
+            />
+            <Label Text=""                              
+                   FontSize="Title"
+            />
+            <Button WidthRequest="250"
+                    Text="Get Started"
+                    FontFamily="Consolas"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    BackgroundColor="Brown"
+                    TextColor="white"
+                    x:Name="firstbutton"                         
+            />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

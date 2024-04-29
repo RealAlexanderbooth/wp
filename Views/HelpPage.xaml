@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wp.Views.HelpPage"
+             Title="HelpPage">
+    <VerticalStackLayout WidthRequest="500"
+                         HeightRequest="600" 
+                         BackgroundColor="GhostWhite"
+                         Margin="50"
+                         >
+        <Border Stroke="Black"
+                StrokeThickness="3"
+                BackgroundColor="Black"
+                >
+            <Image  Source="trees.jpg"           
+                    Aspect="AspectFill"
+                    x:Name="trees"
+                    MaximumHeightRequest="150"
+                    MaximumWidthRequest="500"
+                    SemanticProperties.Description="Pine Tree Background"
+            />
+        </Border>
+        <Label Text="WP"
+                TextColor="White"
+                Margin="0, -90, 0, 90"
+                FontSize="32"
+                FontAttributes="Bold,Italic"
+                FontFamily="Consolas"    
+                HorizontalOptions="Center"              
+        />
+        <Label Text="Help"
+               FontSize="35"
+               FontFamily="Consolas"
+               FontAttributes="Bold"
+               TextColor="Black"
+               HorizontalOptions="Center"
+               TranslationY="-30"/>
+        <Label Text="Upon making your reservation, you should have received a confirmation email containing important information, including your login pass code for accessing your Whispering Pines Inn app account."
+               TextColor="Black"
+               Padding="20,0,0,15"
+               FontFamily="Consolas"
+               CharacterSpacing="1"
+               FontSize="15"
+               />
+        <Label Text="Please ensure to check your inbox, including your spam or junk folders, for this email. If you haven't received it, please contact front desk to verify your email and ensure you get your pass code promptly."
+               TextColor="Black"
+               Padding="20,0,0,15"
+               FontFamily="Consolas"
+               CharacterSpacing="1"
+               FontSize="15"
+               />
+        <Label Text="If you have any other questions please contact front desk or customer service."
+               TextColor="Black"
+               Padding="20,0,0,15"
+               FontFamily="Consolas"
+               CharacterSpacing="1"
+               FontSize="15"
+               />
+        <Label Text="Front Desk: Call +1 (555) 123-4566"
+               TextColor="Black"
+               Padding="20,0,0,15"
+               FontFamily="Consolas"
+               CharacterSpacing="1"
+               FontSize="15"
+               />
+        <Label Text="Customer Service: Call +1 (555) 123-4567 "
+               TextColor="Black"
+               Padding="20,0,0,0"
+               FontFamily="Consolas"
+               CharacterSpacing="1"
+               FontSize="15"
+               />
+
+        <ImageButton Source="door.png"
+                     WidthRequest="40"
+                     HorizontalOptions="End"
+                     Margin="0,10,15,0"
+                     Clicked="BackButton"
+                     VerticalOptions="End"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
+
+

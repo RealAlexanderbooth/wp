@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="wp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:wp"
+    xmlns:views="clr-namespace:wp.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="wp">
+
+    <ShellContent 
+        Title="GetStarted"
+        ContentTemplate="{DataTemplate views:GetStarted}"
+        Route="GetStarted"/>
+    <ShellContent
+        Title="Welcome"
+        ContentTemplate="{DataTemplate views:Welcome}"
+        Route="Welcome"/>
+    <ShellContent 
+        Title="WelcomeOptions"
+        ContentTemplate="{DataTemplate views:WelcomeOptions}"
+        Route="WelcomeOptions"/>
+    <ShellContent
+        Title="Settings"
+        ContentTemplate="{DataTemplate views:Settings}"
+        Route="Settings"/>
+    <ShellContent
+        Title="CheckInOut"
+        ContentTemplate="{DataTemplate views:CheckInOut}" 
+        Route="CheckInOut"/>
+</Shell>

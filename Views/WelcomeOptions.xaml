@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wp.Views.WelcomeOptions"
+             Title="WelcomeOptions">
+
+    <VerticalStackLayout WidthRequest="500"
+                         HeightRequest="600" 
+                         BackgroundColor="GhostWhite"
+                         Margin="50"
+                         >
+        <Border Stroke="Black"
+                StrokeThickness="3"
+                BackgroundColor="Black"
+                >
+            <Image  Source="trees.jpg"           
+                    Aspect="AspectFill"
+                    x:Name="trees"
+                    MaximumHeightRequest="150"
+                    MaximumWidthRequest="500"
+                    SemanticProperties.Description="Pine Tree Background"
+            />
+        </Border>
+        <Label Text="WP"
+                TextColor="White"
+                Margin="0, -90, 0, 60"
+                FontSize="32"
+                FontAttributes="Bold,Italic"
+                FontFamily="Consolas"    
+                HorizontalOptions="Center"              
+        />
+
+        <Label Text="Welcome"
+                FontFamily="Consolas"
+                FontSize="Title"
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                Margin="0,0,0,30"
+        />
+        <Grid TranslationY="-13" RowSpacing="15"
+              ColumnSpacing="-120"
+              >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="130"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="130"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Row="0"
+                    Grid.Column="0"
+                    WidthRequest="130"
+                    HeightRequest="130"
+                    StrokeThickness="5"
+                    Stroke="SaddleBrown"
+                    Background="LightGray"
+                    >
+                <ImageButton Source="bed.png"
+                             WidthRequest="90"
+                             TranslationY="-5"
+                                                     
+                />
+            </Border>
+            <Label  Text="Room Details"
+                    TextColor="Black"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    HorizontalTextAlignment="Center"
+                    TranslationY="-45"
+                    FontAttributes="Bold"
+                    FontFamily="Consolas"/>
+
+
+
+            <Border Grid.Row="0"
+                    Grid.Column="1"
+                    WidthRequest="130"
+                    HeightRequest="130"
+                    StrokeThickness="5"
+                    Stroke="SaddleBrown"
+                    Background="White">
+                <ImageButton Source="checkout.png"
+                             WidthRequest="83"
+                             TranslationY="-7"
+                             Clicked="CheckInOutButton"
+                             
+                />
+            </Border>
+            <Label  Text="Check In/Out"
+                    TextColor="Black"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HorizontalTextAlignment="Center"
+                    TranslationY="-45"
+                    FontAttributes="Bold"
+                    FontFamily="Consolas"/>
+            <Border Grid.Row="2"
+                    Grid.Column="0"
+                    WidthRequest="130"
+                    HeightRequest="130"
+                    StrokeThickness="5"
+                    Stroke="SaddleBrown"
+                    Background="white">
+                <ImageButton Source="account.png"
+                             WidthRequest="75" 
+                             TranslationY="-4"
+                             
+                />
+            </Border>
+            <Label  Text="Account Details"
+                    TextColor="Black"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    HorizontalTextAlignment="Center"
+                    TranslationY="-45"
+                    FontAttributes="Bold"
+                    FontFamily="Consolas"
+                    CharacterSpacing="-0.6"
+                    />
+
+            <Border Grid.Row="2"
+                    Grid.Column="1"
+                    WidthRequest="130"
+                    HeightRequest="130"
+                    StrokeThickness="5"
+                    Stroke="SaddleBrown"
+                    Background="LightGray">
+                <ImageButton Source="phone.png"
+                             WidthRequest="75"  
+                             TranslationY="-5"
+                             Clicked="FrontDesk"
+                             
+                />
+            </Border>
+            <Label  Text="Front Desk"
+                    TextColor="Black"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    HorizontalTextAlignment="Center"
+                    TranslationY="-45"
+                    FontAttributes="Bold"
+                    FontFamily="Consolas"
+                    />
+        </Grid>
+
+        <Border VerticalOptions="End"    
+                Background="LightGray"
+                WidthRequest="500"
+                HeightRequest="60"
+                TranslationY="-27"
+                >
+            <Grid TranslationY="0">
+                <ImageButton Source="mail.png"
+                             WidthRequest="50"
+                             HorizontalOptions="Start"
+                             VerticalOptions="End"      
+                             Background="Transparent"
+                             TranslationX="75"
+                />
+                <ImageButton Source="home.png"
+                             WidthRequest="50"
+                             HorizontalOptions="Center"
+                             VerticalOptions="End"        
+                             Background="Transparent"
+                          
+                />
+                <ImageButton Source="settings.png"
+                             WidthRequest="50"
+                             HorizontalOptions="End"
+                             VerticalOptions="End"           
+                             Background="Transparent"
+                             TranslationX="-75"
+                             Clicked="SettingsPage"
+                />
+                
+            </Grid>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>
