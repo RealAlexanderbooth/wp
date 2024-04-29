@@ -116,14 +116,14 @@
                         Clicked="GetStarted"                     
                         />
         <Grid TranslationY="-25">
-            <Ellipse Stroke="Brown"
-                 Fill="Brown"
+            <Ellipse Stroke="LightGray"
+                 Fill="LightGray"
                  WidthRequest="10"
                  HeightRequest="10"
                  TranslationX="-12"  
                  />
-            <Ellipse Stroke="LightGray"
-                 Fill="LightGray"
+            <Ellipse Stroke="Brown"
+                 Fill="Brown"
                  WidthRequest="10"
                  HeightRequest="10"
                  TranslationX="12"  
