@@ -54,7 +54,8 @@ whisperingpines@gmail.com"
                FontFamily="Consolas"
                CharacterSpacing="1"
                FontSize="16"
-               HorizontalOptions="End"            
+               HorizontalOptions="End"   
+               WidthRequest="265"
                />
         </Grid>
         <Grid Margin="20,0,0,20">

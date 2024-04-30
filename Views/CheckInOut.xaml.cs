@@ -21,4 +21,9 @@ public partial class CheckInOut : ContentPage
     {
         Navigation.PushAsync(new WelcomeOptions());
     }
+
+    private void CheckOutConfirm(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new CheckOutConfirmation());
+    }
 }

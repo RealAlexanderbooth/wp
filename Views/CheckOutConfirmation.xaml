@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="wp.Views.CheckInOut"
-             Title="CheckInOut">
+             x:Class="wp.Views.CheckOutConfirmation"
+             Title="CheckOutConfirmation">
     <VerticalStackLayout WidthRequest="500"
                          HeightRequest="600" 
                          BackgroundColor="GhostWhite"
@@ -116,7 +116,6 @@
                        FontSize="20"
                        Background="Transparent"
                        HorizontalTextAlignment="Center"
-                       x:Name="checkOutEntry"
                        />
             </Grid>
         </Grid>
@@ -130,7 +129,6 @@
                 TextColor="Black"
                 HorizontalOptions="End"
                 Margin="0,0,85,-46"
-                Clicked="CheckOutConfirm"
                 />
         <Image Source="pinetree.png"
                WidthRequest="100"
@@ -167,7 +165,6 @@
                              VerticalOptions="End"           
                              Background="Transparent"
                              TranslationX="-75"
-                             Clicked="SettingsPage"
                 />
 
             </Grid>
