@@ -29,110 +29,94 @@
                 HorizontalOptions="Center"              
         />
         <Grid>
-            <Image Source="pinecone.png"
-                   WidthRequest="45"
-                   HorizontalOptions="Start"
-                   TranslationX="10"
-                   TranslationY="-15"/>
-            <Label Text="Check-in &amp; Check-out"
-                   FontSize="33"
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Text="Thank you for booking with us at Whispering Pines Inn!"
+                   FontSize="23"
                    FontFamily="Consolas"
-                   FontAttributes="Bold"
                    TextColor="Black"
                    HorizontalOptions="Center"
-                   TranslationY="-30"/>
-            <Image Source="pinecone.png"
-                   WidthRequest="45"
-                   HorizontalOptions="End"
-                   TranslationX="-10"
-                   TranslationY="-15"
+                   TranslationY="-30"
+                   HorizontalTextAlignment="Center"
+                   Grid.Row="0"/>
+            <Label Grid.Row="1"/>
+            <Label Text="Come back again!"
+                   FontSize="23"
+                   FontFamily="Consolas"
+                   TextColor="Black"
+                   HorizontalOptions="Center"
+                   TranslationY="-30"
+                   HorizontalTextAlignment="Center"
+                   Grid.Row="2"/>
+        </Grid>
+        <Grid ColumnSpacing="22"> 
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="175"/>
+                <ColumnDefinition Width="380"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Arrival Date: "
+                   TextColor="Black"
+                   Padding="20,0,0,15"
+                   FontFamily="Consolas"
+                   CharacterSpacing="1"
+                   FontSize="20"
+                   TranslationY="15"
+                   Margin="0,0,0,20"
+                   Grid.Column="0"
+                   WidthRequest="230"
+               />
+            <Label Text="Saturday, 01 May 2024"
+                   TextColor="Black"
+                   Padding="20,0,0,15"
+                   FontFamily="Consolas"
+                   CharacterSpacing="1"
+                   FontSize="20"
+                   TranslationY="15"
+                   Grid.Column="1"
+                   HorizontalTextAlignment="Start"
+                   WidthRequest="360"
+                   TranslationX="-0"
+                   x:Name="CheckinDate" 
                    />
         </Grid>
-
-        <Label Text="Please input your booking code below to facilitate a seamless check-in or check-out process."
-               TextColor="Black"
-               Padding="20,0,0,15"
-               FontFamily="Consolas"
-               CharacterSpacing="1"
-               FontSize="15"
-               WidthRequest="450"
-               HorizontalTextAlignment="Center"
+        <Grid Margin="0,0,0,19"
+              ColumnSpacing="83"
+              
+              >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="143"/>
+                <ColumnDefinition Width="360"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Departure:"
+                   TextColor="Black"
+                   Padding="20,0,0,15"
+                   FontFamily="Consolas"
+                   CharacterSpacing="1"
+                   FontSize="20"
+                   TranslationY="5"
+                   Grid.Column="0"
                />
-        <Grid>
-            <Label Text="Check-In"
-               TextColor="Black"
-               Padding="20,0,0,15"
-               FontFamily="Consolas"
-               CharacterSpacing="1"
-               FontSize="25"
-               FontAttributes="Bold"
-               TranslationY="15"
-               Margin="0,0,0,20"
+            <Label Text="Saturday, 04 May 2024"
+                   TextColor="Black"
+                   Padding="20,0,0,15"
+                   FontFamily="Consolas"
+                   CharacterSpacing="1"
+                   FontSize="20"
+                   TranslationY="5"
+                   Grid.Column="1"
+                   HorizontalTextAlignment="Start"
+                   WidthRequest="360"
+                   TranslationX="-20"
+                   x:Name="CheckoutDate"        
                />
-            <Grid WidthRequest="250"
-                         Margin="0,0,30,0"
-                         HeightRequest="39"
-                         HorizontalOptions="End"
-                         >
-                <RoundRectangle WidthRequest="250"
-                            HeightRequest="40"
-                            BackgroundColor="SaddleBrown"
-                            CornerRadius="23"                  
-                            />
-                <Entry Placeholder="Enter Code Here"
-                       PlaceholderColor="LightGray"
-                       TextColor="White"
-                       FontSize="20"
-                       Background="Transparent"
-                       HorizontalTextAlignment="Center"
-                       x:Name="checkInEntry"
-                       />
-            </Grid>
         </Grid>
-        <Grid Margin="0,0,0,19">
-            <Label Text="Check-Out"
-               TextColor="Black"
-               Padding="20,0,0,15"
-               FontFamily="Consolas"
-               CharacterSpacing="1"
-               FontSize="25"
-               TranslationY="5"
-               FontAttributes="Bold"
-
-               />
-            <Grid WidthRequest="250"
-                         Margin="0,0,30,0"
-                         HeightRequest="39"
-                         HorizontalOptions="End"
-                         >
-                <RoundRectangle WidthRequest="250"
-                            HeightRequest="40"
-                            BackgroundColor="SaddleBrown"
-                            CornerRadius="23"                  
-                            />
-                <Entry Placeholder="Enter Code Here"
-                       PlaceholderColor="LightGray"
-                       TextColor="White"
-                       FontSize="20"
-                       Background="Transparent"
-                       HorizontalTextAlignment="Center"
-                       />
-            </Grid>
-        </Grid>
-        <Button Text="Confirm Code"
-                Background="LightGray"
-                WidthRequest="130"
-                FontFamily="Consolas"
-                BorderColor="Black"
-                BorderWidth="3"
-                FontAttributes="Bold"
-                TextColor="Black"
-                HorizontalOptions="End"
-                Margin="0,0,85,-46"
-                />
+  
         <Image Source="pinetree.png"
                WidthRequest="100"
-               HorizontalOptions="Start"
+               HorizontalOptions="End"
                Margin="30,0,0,0"/>
 
 
@@ -168,6 +152,6 @@
                 />
 
             </Grid>
-        </Border>
+            
     </VerticalStackLayout>
 </ContentPage>
